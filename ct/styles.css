@@ -44,3 +44,19 @@ li {
     width: 50%;
     padding: 10px;
 }
+
+a:link {
+    color: chartreuse;
+}
+  
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: chartreuse;
+}
+  
+a:active {
+    color: chartreuse;
+}
