@@ -1,0 +1,46 @@
+@font-face {
+    font-family: minecraft-regular;
+    src: url("./fonts/minecraft-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: minecraft-bold;
+    src: url("./fonts/minecraft-bold.otf") format("opentype");
+}
+
+body, html {
+	border: none;
+	margin: 0;
+	padding: 0;
+	color: #e0d0d0;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./images/stone.png');
+    background-size: 7.5%;
+	font-weight: normal;
+	font-family: sans-serif;
+    height:100%;
+    image-rendering: pixelated;
+    font-family: minecraft-regular;
+}
+
+#title {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 1%;
+}
+
+code {
+    font-family: minecraft-regular;
+    font-size: smaller;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+li {
+    list-style-type: square;
+}
+
+#backups {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
