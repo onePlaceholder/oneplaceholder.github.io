@@ -60,12 +60,3 @@ a:hover {
 a:active {
     color: chartreuse;
 }
-
-.cky-btn-accept{
-    color: red;
-    border-color:#d0d0d0
-}
-
-.cky-btn-reject{
-    color: chartreuse;
-}
