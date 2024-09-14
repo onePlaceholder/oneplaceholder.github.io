@@ -68,3 +68,13 @@ a:active {
     margin-left:auto;
     margin-right:auto;
 }
+
+details summary {
+    list-style-type: '→ ';
+}
+
+
+
+details[open] summary {
+    list-style-type: '↓ ';
+}
