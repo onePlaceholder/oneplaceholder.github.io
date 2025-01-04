@@ -35,3 +35,19 @@ body, html {
 #__next .rounded-md {
     border-radius: 0;
 }
+
+.BtnGroup {
+    border-radius: 0;
+}
+
+.rounded-xl {
+    border-radius: 0;
+}
+
+.gsc-social-reaction-summary-item {
+    border-radius: 0;
+}
+
+#__next .rounded {
+    border-radius: 0;
+}
