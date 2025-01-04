@@ -10,4 +10,7 @@
 
 body, html {
     font-family: minecraft-regular;
+    background-color: rgba(0, 0, 0, 0.5);
+    image-rendering: pixelated;
+    margin: 5%;
 }
