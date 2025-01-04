@@ -10,7 +10,28 @@
 
 body, html {
     font-family: minecraft-regular;
-    background-color: rgba(0, 0, 0, 0.5);
     image-rendering: pixelated;
-    margin: 5%;
+}
+
+
+.gsc-comments {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+}
+
+.gsc-comment-box:not(.gsc-comment-box-is-reply) {
+    border-radius: 0;
+}
+
+.gsc-comment-box * {
+    border-radius: 0;
+}
+
+#__next .rounded-t {
+    border-start-end-radius: 0;
+    border-start-start-radius: 0;
+}
+
+#__next .rounded-md {
+    border-radius: 0;
 }
