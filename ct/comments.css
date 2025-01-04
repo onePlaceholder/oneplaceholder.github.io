@@ -1,0 +1,13 @@
+@font-face {
+    font-family: minecraft-regular;
+    src: url("./fonts/minecraft-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: minecraft-bold;
+    src: url("./fonts/minecraft-bold.otf") format("opentype");
+}
+
+body, html {
+    font-family: minecraft-regular;
+}
