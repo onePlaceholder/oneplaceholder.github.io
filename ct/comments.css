@@ -55,3 +55,17 @@ body, html {
 .btn {    
     border-radius: 0;
 }
+
+.giscus, .giscus-frame {
+    width: 100%;
+    min-height: 150px;
+}
+  
+.giscus-frame {
+    border: none;
+    color-scheme: dark;
+}
+
+.giscus-frame--loading {
+    opacity: 0;
+}  
