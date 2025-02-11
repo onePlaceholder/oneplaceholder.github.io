@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>24-02-2025</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="sujet-pratique-nsi-2024-n°21">Sujet Pratique NSI 2024 N°21</h1>
+<h2 id="exercice-1">Exercice 1</h2>
+<pre class=" language-py"><code class="prism  language-py"><span class="token keyword">def</span> <span class="token function">recherche_motif</span><span class="token punctuation">(</span>motif<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">,</span> texte<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">list</span><span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+    resultat <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>texte<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token builtin">len</span><span class="token punctuation">(</span>motif<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> motif <span class="token operator">==</span> texte<span class="token punctuation">[</span>i <span class="token punctuation">:</span> i <span class="token operator">+</span> <span class="token builtin">len</span><span class="token punctuation">(</span>motif<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+            resultat<span class="token punctuation">.</span>append<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> resultat
+</code></pre>
+<h2 id="exercice-2">Exercice 2</h2>
+<pre class=" language-py"><code class="prism  language-py"><span class="token keyword">def</span> <span class="token function">parcours</span><span class="token punctuation">(</span>adj<span class="token punctuation">,</span> x<span class="token punctuation">,</span> acc<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	<span class="token triple-quoted-string string">'''Réalise un parcours en profondeur récursif
+	du graphe donné par les listes d'adjacence adj
+	depuis le sommet x en accumulant les sommets
+	rencontrés dans acc'''</span>
+	<span class="token keyword">if</span> x <span class="token operator">not</span> <span class="token keyword">in</span> acc<span class="token punctuation">:</span>
+		acc<span class="token punctuation">.</span>append<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+		<span class="token keyword">for</span> y <span class="token keyword">in</span> adj<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">:</span>
+			parcours<span class="token punctuation">(</span>adj<span class="token punctuation">,</span> y<span class="token punctuation">,</span> acc<span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">accessibles</span><span class="token punctuation">(</span>adj<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	<span class="token triple-quoted-string string">'''Renvoie la liste des sommets accessibles dans le
+	graphe donné par les listes d'adjacence adj depuis
+	le sommet x.'''</span>
+	acc <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+	parcours<span class="token punctuation">(</span>adj<span class="token punctuation">,</span> x<span class="token punctuation">,</span> acc<span class="token punctuation">)</span>
+	<span class="token keyword">return</span> acc
+</code></pre>
+</div>
+</body>
+
+</html>
